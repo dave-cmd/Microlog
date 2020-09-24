@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <td><img src={{image_file}} style="border-radius: 50%" height="70px" width="70px"></td>
+        <td>
+            <a href="{{url_for('user', username=i.author.username)}}">
+                <p>{{i.author.username}}</p>
+            </a>
+            <p>{{i.body}}</p>
+            <p>{{moment(i.timestamp).fromNow()}}</p> 
+            
+            {% if i.language %}
+                <br><br>
+                <a>_(Translate)</a>
+            {% endif %}
+        </td>
+
+    </tr>
+</table>

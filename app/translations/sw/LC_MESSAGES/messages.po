@@ -1,0 +1,204 @@
+# Swahili translations for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-07-14 19:23+0300\n"
+"PO-Revision-Date: 2020-07-14 14:52+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: sw\n"
+"Language-Team: sw <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: app/forms.py:12 app/forms.py:18 app/forms.py:34
+msgid "Username"
+msgstr "Jina la mtumiaji"
+
+#: app/forms.py:13 app/forms.py:20 app/forms.py:68
+msgid "Password"
+msgstr "Nywila"
+
+#: app/forms.py:14
+msgid "Remember_me"
+msgstr "Nikumbuke"
+
+#: app/forms.py:15
+msgid "Sign In"
+msgstr "Weka Sahihi"
+
+#: app/forms.py:19 app/forms.py:35 app/forms.py:64
+msgid "Email"
+msgstr "Barua Pepe"
+
+#: app/forms.py:21 app/forms.py:70
+msgid "Repeat Password"
+msgstr "Rudia Nywila"
+
+#: app/forms.py:21
+msgid "password"
+msgstr "nywila"
+
+#: app/forms.py:22 app/templates/registration.html:5
+msgid "Register"
+msgstr "Kujiandikisha"
+
+#: app/forms.py:36
+msgid "About Me"
+msgstr "Kuhusu Mimi"
+
+#: app/forms.py:37
+msgid "Picture"
+msgstr "Picha"
+
+#: app/forms.py:38 app/forms.py:57 app/forms.py:61
+msgid "Submit"
+msgstr "Wasilisha"
+
+#: app/forms.py:46
+msgid "Please use a different username."
+msgstr "Tafathali tumia mtumiaji tofauti"
+
+#: app/forms.py:53
+msgid "Please use a different email address."
+msgstr "afadhali tumia barua pepe tofauti\""
+
+#: app/forms.py:60
+msgid "Say something..."
+msgstr "Sema kitu..."
+
+#: app/forms.py:65 app/forms.py:71 app/templates/reset_password_request.html:6
+msgid "Request Password Reset"
+msgstr "Ombi Kuweka Upya Neno Siri"
+
+#: app/model.py:17
+msgid "Login to access page."
+msgstr "Ingia ili kuweza kuwasiliana"
+
+#: app/routes.py:60
+msgid "User does not exist."
+msgstr "Mtumiaji hapatikani"
+
+#: app/routes.py:63
+msgid "Invalid username or password"
+msgstr "Jina au neno siri la mtumiaji batili"
+
+#: app/routes.py:67
+msgid "Login successful."
+msgstr "Kuingia imefanikiwa"
+
+#: app/routes.py:87
+msgid "Registration Successful"
+msgstr "Kujisajili imefanikiwa"
+
+#: app/routes.py:139
+msgid "Your changes have been saved."
+msgstr "Mabadiliko yako yamehifadhiwa"
+
+#: app/routes.py:157 app/routes.py:179
+msgid "User is not in our database."
+msgstr "Mtumiaji hayuko kwenye hifadhidata"
+
+#: app/routes.py:218
+msgid "Check your email for the instructions to reset your password."
+msgstr "Angalia barua pepe yako kwa maagizo ya kuweka upya nywila yako."
+
+#: app/routes.py:234
+msgid "Your password has been reset."
+msgstr "Nywila yako imewekwa upya."
+
+#: app/templates/404.html:4
+msgid "File not found."
+msgstr "Faili haipatikani."
+
+#: app/templates/404.html:6
+msgid "Navigate to Home."
+msgstr "Nenda nyumbani."
+
+#: app/templates/500.html:4
+msgid "An unexpected error occured"
+msgstr "Hitilafu isiyotarajiwa imetokea"
+
+#: app/templates/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr "Msimamizi amearifiwa. Pole kwa usumbufu."
+
+#: app/templates/500.html:6 app/templates/base.html:21
+msgid "Home"
+msgstr "Nyumbani"
+
+#: app/templates/base.html:22
+msgid "Profile"
+msgstr "Profaili"
+
+#: app/templates/base.html:23
+msgid "Explore"
+msgstr "Chunguza"
+
+#: app/templates/base.html:27
+msgid "Logout"
+msgstr "Toka nje"
+
+#: app/templates/base.html:32 app/templates/login.html:8
+msgid "Login"
+msgstr "Ingia"
+
+#: app/templates/edit_profile.html:5
+msgid "Edit Profile"
+msgstr "Hariri wasifu."
+
+#: app/templates/index.html:44 app/templates/user.html:67
+msgid "Newer posts"
+msgstr "Machapisho mapya"
+
+#: app/templates/index.html:49 app/templates/user.html:72
+msgid "Older posts"
+msgstr "Machapisho ya zamani"
+
+#: app/templates/login.html:14
+msgid "New User?"
+msgstr "Mtumiaji mpya"
+
+#: app/templates/login.html:14
+msgid "Click to Register!"
+msgstr "Bonyeza kujiandikisha"
+
+#: app/templates/login.html:15
+msgid "Forgot Password"
+msgstr "Umesahau nywila"
+
+#: app/templates/reset_password.html:7
+msgid "Reset Your Password"
+msgstr "Kuweka upya nywila"
+
+#: app/templates/user.html:9
+msgid "User"
+msgstr "Mtumiaji"
+
+#: app/templates/user.html:13
+msgid "About"
+msgstr "Kuhusu"
+
+#: app/templates/user.html:20
+msgid "followers"
+msgstr "Wafuasi"
+
+#: app/templates/user.html:21
+msgid "following"
+msgstr "Kufuata"
+
+#: app/templates/user.html:26
+msgid "Last Seen"
+msgstr "Mara ya mwisho kuonekana"
+
+#: app/templates/user.html:32
+msgid "Edit your profile"
+msgstr "Haririr maelezo yako mafupi"
+

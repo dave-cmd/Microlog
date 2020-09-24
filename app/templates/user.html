@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block app_content %}
+
+    <table class="table table-borderless">
+        <tr valign="top">
+            <td><img src={{image_file}} style="border-radius: 50%" height="250px" width="250px"></td>
+            <td>
+                <h1>
+                    {{_("User")}}: {{ user.username }}
+                </h1>
+                {% if user.about_me %}
+                <h3>
+                    {{_("About")}}
+                </h3>
+                <p>
+                    {{user.about_me}}
+                </p>
+                {% endif %}
+                <p>
+                    {{_("followers")}}: {{user.followers.count()}},
+                    {{_("following")}}: {{user.followed.count()}}
+                </p>
+                {% if user.last_seen %}
+                <h4>
+                    <p>
+                        {{_("Last Seen")}}:  {{moment(user.last_seen).format('LLL')}}
+                    </p>
+                </h4>
+                {% endif %}
+                {% if user == current_user %}
+                <p>
+                    <a href="{{ url_for('edit_profile') }}">{{_("Edit your profile")}}</a>
+                </p>
+                {% endif %}
+                
+                
+                {% if not current_user.is_following(user) %}
+                <span>
+                    <form action="{{url_for('follow', username=user.username )}}" method="post">
+                        {{form.hidden_tag()}}
+                        {{form.submit(value='Follow')}}
+                
+                    </form>
+                </span>
+                {% else %}
+                <span>
+                    <form action="{{url_for('unfollow', username=user.username )}}" method="post">
+                        {{form.hidden_tag()}}
+                        {{form.submit(value='Unfollow')}}
+                
+                    </form>
+    
+                </span>
+                {% endif %}
+            </td>
+        </tr>
+    </table>
+    <hr>
+    {% for i in post %}
+        {% include '_post.html'%}
+    {% endfor %}
+
+    <nav aria-label="...">
+        <ul class="pager">
+            <li class="previous{% if not prev_url %} disabled{% endif %}">
+                <a href="{{ prev_url or '#' }}">
+                    <span aria-hidden="true">&larr;</span> {{_("Newer posts")}}
+                </a>
+            </li>
+            <li class="next{% if not next_url %} disabled{% endif %}">
+                <a href="{{ next_url or '#' }}">
+                    {{_("Older posts")}} <span aria-hidden="true">&rarr;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+        
+
+{% endblock %}
+
+
+
+

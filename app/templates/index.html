@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<center><h1>Welcome {{current_user.username}}</h1></center>
+
+{% if form %}
+{% import 'bootstrap/wtf.html' as wtf %}
+        <div class="row">
+        <div class="col-md-4">
+            {{ wtf.quick_form(form) }}
+        </div>
+        </div>
+{% endif %}
+        {% for i in posts %}
+            <table>
+                <tr> 
+                    {% if i.author.image %}
+                    <td>
+                        <img src="{{url_for('static', filename='profile_pics/'+ i.author.image)}}" style="border-radius: 50%" height="70px" width="70px">
+                    </td>
+                    {% endif %}
+                    <td>
+                        <p>
+                            <a href="{{url_for('user', username=i.author.username)}}">
+                            <strong>
+                                {{i.author.username}}.
+                            </strong>
+                            </a>
+                        </p> 
+                        <p>
+                            {{i.body}}
+                        </p>
+                        <p>
+                            {{moment(i.timestamp).fromNow()}}
+                        </p>
+                        {% if i.language %}
+                            <span id="translation{{ i.id }}">
+                                <a href="javascript:translate(
+                                '#post{{ i.id }}',
+                                '#translation{{ i.id }}',
+                                '{{ i.language }}',
+                                '{{ g.locale }}');">{{ _('Translate') }}</a>
+                            </span>
+                        {% endif %}
+                        <br><br>
+                    </td>
+                </tr>
+            </table>
+        {% endfor %}
+    <nav aria-label="...">
+        <ul class="pager">
+            <li class="previous{% if not prev_url %} disabled{% endif %}">
+                <a href="{{ prev_url or '#' }}">
+                    <span aria-hidden="true">&larr;</span> {{_("Newer posts")}}
+                </a>
+            </li>
+            <li class="next{% if not next_url %} disabled{% endif %}">
+                <a href="{{ next_url or '#' }}">
+                    {{_("Older posts")}} <span aria-hidden="true">&rarr;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+{% endblock %}

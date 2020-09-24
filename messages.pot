@@ -1,0 +1,203 @@
+# Translations template for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-07-14 19:23+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: app/forms.py:12 app/forms.py:18 app/forms.py:34
+msgid "Username"
+msgstr ""
+
+#: app/forms.py:13 app/forms.py:20 app/forms.py:68
+msgid "Password"
+msgstr ""
+
+#: app/forms.py:14
+msgid "Remember_me"
+msgstr ""
+
+#: app/forms.py:15
+msgid "Sign In"
+msgstr ""
+
+#: app/forms.py:19 app/forms.py:35 app/forms.py:64
+msgid "Email"
+msgstr ""
+
+#: app/forms.py:21 app/forms.py:70
+msgid "Repeat Password"
+msgstr ""
+
+#: app/forms.py:21
+msgid "password"
+msgstr ""
+
+#: app/forms.py:22 app/templates/registration.html:5
+msgid "Register"
+msgstr ""
+
+#: app/forms.py:36
+msgid "About Me"
+msgstr ""
+
+#: app/forms.py:37
+msgid "Picture"
+msgstr ""
+
+#: app/forms.py:38 app/forms.py:57 app/forms.py:61
+msgid "Submit"
+msgstr ""
+
+#: app/forms.py:46
+msgid "Please use a different username."
+msgstr ""
+
+#: app/forms.py:53
+msgid "Please use a different email address."
+msgstr ""
+
+#: app/forms.py:60
+msgid "Say something..."
+msgstr ""
+
+#: app/forms.py:65 app/forms.py:71 app/templates/reset_password_request.html:6
+msgid "Request Password Reset"
+msgstr ""
+
+#: app/model.py:17
+msgid "Login to access page."
+msgstr ""
+
+#: app/routes.py:60
+msgid "User does not exist."
+msgstr ""
+
+#: app/routes.py:63
+msgid "Invalid username or password"
+msgstr ""
+
+#: app/routes.py:67
+msgid "Login successful."
+msgstr ""
+
+#: app/routes.py:87
+msgid "Registration Successful"
+msgstr ""
+
+#: app/routes.py:139
+msgid "Your changes have been saved."
+msgstr ""
+
+#: app/routes.py:157 app/routes.py:179
+msgid "User is not in our database."
+msgstr ""
+
+#: app/routes.py:218
+msgid "Check your email for the instructions to reset your password."
+msgstr ""
+
+#: app/routes.py:234
+msgid "Your password has been reset."
+msgstr ""
+
+#: app/templates/404.html:4
+msgid "File not found."
+msgstr ""
+
+#: app/templates/404.html:6
+msgid "Navigate to Home."
+msgstr ""
+
+#: app/templates/500.html:4
+msgid "An unexpected error occured"
+msgstr ""
+
+#: app/templates/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr ""
+
+#: app/templates/500.html:6 app/templates/base.html:21
+msgid "Home"
+msgstr ""
+
+#: app/templates/base.html:22
+msgid "Profile"
+msgstr ""
+
+#: app/templates/base.html:23
+msgid "Explore"
+msgstr ""
+
+#: app/templates/base.html:27
+msgid "Logout"
+msgstr ""
+
+#: app/templates/base.html:32 app/templates/login.html:8
+msgid "Login"
+msgstr ""
+
+#: app/templates/edit_profile.html:5
+msgid "Edit Profile"
+msgstr ""
+
+#: app/templates/index.html:44 app/templates/user.html:67
+msgid "Newer posts"
+msgstr ""
+
+#: app/templates/index.html:49 app/templates/user.html:72
+msgid "Older posts"
+msgstr ""
+
+#: app/templates/login.html:14
+msgid "New User?"
+msgstr ""
+
+#: app/templates/login.html:14
+msgid "Click to Register!"
+msgstr ""
+
+#: app/templates/login.html:15
+msgid "Forgot Password"
+msgstr ""
+
+#: app/templates/reset_password.html:7
+msgid "Reset Your Password"
+msgstr ""
+
+#: app/templates/user.html:9
+msgid "User"
+msgstr ""
+
+#: app/templates/user.html:13
+msgid "About"
+msgstr ""
+
+#: app/templates/user.html:20
+msgid "followers"
+msgstr ""
+
+#: app/templates/user.html:21
+msgid "following"
+msgstr ""
+
+#: app/templates/user.html:26
+msgid "Last Seen"
+msgstr ""
+
+#: app/templates/user.html:32
+msgid "Edit your profile"
+msgstr ""
+
